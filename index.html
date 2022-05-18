@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Hi, i am an amateur programmer">
+  <link rel="icon" type="image/svg+xml"  href="assets/image.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome!</title>
+  <script type="module" crossorigin src="/assets/index.62f6fb6e.js"></script>
+  <link rel="stylesheet" href="/assets/index.724e80f5.css">
+</head>
+
+<body class=" bg-black text-white mx-1 md:mx-96  md:text-center justify-center items-center content-center ">
+  <div id="app">
+    <header>
+      <nav>
+        <ul class=" mt-3 text-center md:space-x-14 md:text-2xl md:my-8 md:mb-10 space-x-8 ">
+          <li class=" inline-block "><a href="#section.projects " class="  ">Projects</a></li>
+          <li class="inline-block "><button class="border-2 rounded-lg p-2  " onclick="switchTheme()"> switch theme
+            </button></li>
+
+        </ul>
+        <div class=" ml-4 mt-10">
+          <div class="  space-x-8 md:text-6xl text-4xl text-left ">Hi, I'm Dhruv
+          </div>
+          <div class="border-t-2 max-w-xs md:max-w-lg  "> </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+      <section class="ml-4  section.about  mt-8 text-xl md:text-2xl">
+        <p >
+          Welcome to my website! I’m an amateur programmer who is learning rust and I mostly Html & Css(this website wes
+          made using <a class=" text-[#05f] " href="https://www.tailwindcss.com/">Tailwindcss</a>). Right now, I’m working on my programming skills
+
+        
+        </p>
+        <p class=" mt-10">
+          I love open-source software, and simple, accessible websites. I also working on some projects here I will upload some of my projects that i am working on but first I will learn JavaScript and Rust. Thanks! for visiting my website 
+        </p>
+      </section>
+      <section id = "section.projects" class="ml-4 md:mt-80 md:text-2xl section.projects text-xl mt-64" >
+     <h1 class=" text-3xl "> Projects</h1>
+     <p> updating soon()</p>
+
+      </section>
+    </main>
+    <footer>
+      <p class="footer text-center text-lg mt-10"> &copy; 2022 Dhruv </p>
+    </footer>
+  </div>
+  
+  <script>let darkTheme = window.matchMedia('(prefers-color-scheme:dark)').matches;
+    document.body.classList.add(darkTheme ? "dark" : "light");
+
+    function switchTheme() {
+      document.body.classList.toggle("light");
+      document.body.classList.toggle("dark");
+    }</script>
+  <style>.light{--border-color:#000;--link:#05f;background:#fff;color:#000}
+
+    ;.dark{--link:#09f;--border-color:#fff;background-color:#000;color:#fff}button,div{border-color:var(--border-color)}
+    </style>
+</body>
+
+</html>
